@@ -15,7 +15,9 @@ Co-founder and Chief Scientific Officer at [SuperMatics](https://supermatics.io/
 Small, reproducible fixes to the scientific tools I depend on: scientific plotting, numerical and dataframe libraries, and materials and simulation tooling. This table is regenerated daily from my public pull requests on other people's repositories.
 
 <!--CONTRIBUTIONS:START-->
-_Pull requests will appear here automatically._
+| Project | Pull request | Status |
+| --- | --- | --- |
+| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Fix tick prefixes and suffixes with explicit tick values](https://github.com/plotly/plotly.js/pull/8160) | Open |
 <!--CONTRIBUTIONS:END-->
 
 ## How I contribute
