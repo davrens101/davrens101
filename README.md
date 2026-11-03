@@ -18,7 +18,21 @@ Small, reproducible fixes to the scientific tools I depend on: scientific plotti
 | Project | Pull request | Status |
 | --- | --- | --- |
 | [rdkit/rdkit](https://github.com/rdkit/rdkit) | [Fix H-bond acceptor definitions for N atoms in BaseFeatures.fdef (#9770)](https://github.com/rdkit/rdkit/pull/9783) | Merged |
-| [pytorch/rl](https://github.com/pytorch/rl) | [Detach clipped importance ratio in CISPOLoss to preserve policy gradients](https://github.com/pytorch/rl/pull/4665) | Open |
+| [GFNOrg/torchgfn](https://github.com/GFNOrg/torchgfn) | [Fix backward probabilities and gradients for resumed trajectories](https://github.com/GFNOrg/torchgfn/pull/535) | Open |
+| [facebookresearch/fairchem](https://github.com/facebookresearch/fairchem) | [Preserve autograd graphs for UMA Hessian inference and training](https://github.com/facebookresearch/fairchem/pull/2272) | Open |
+| [lucidrains/x-transformers](https://github.com/lucidrains/x-transformers) | [Preserve global positions across cached recurrent transformer steps](https://github.com/lucidrains/x-transformers/pull/410) | Open |
+| [lucidrains/x-transformers](https://github.com/lucidrains/x-transformers) | [Preserve optional MLA cache components in generation and beam search](https://github.com/lucidrains/x-transformers/pull/408) | Open |
+| [torchmd/torchmd-net](https://github.com/torchmd/torchmd-net) | [Make Coulomb energies independent of coordinate units](https://github.com/torchmd/torchmd-net/pull/399) | Open |
+| [torchmd/torchmd-net](https://github.com/torchmd/torchmd-net) | [Preserve pair-free samples in Coulomb batch reduction](https://github.com/torchmd/torchmd-net/pull/400) | Open |
+| [pytorch/rl](https://github.com/pytorch/rl) | [[LLM] Mask SFT reference losses to valid assistant tokens](https://github.com/pytorch/rl/pull/4673) | Open |
+| [Lightning-AI/litgpt](https://github.com/Lightning-AI/litgpt) | [Keep grouped MoE routing within eligible expert groups](https://github.com/Lightning-AI/litgpt/pull/2389) | Open |
+| [facebookresearch/flow_matching](https://github.com/facebookresearch/flow_matching) | [Fix singular discrete-flow start with exact entrance law](https://github.com/facebookresearch/flow_matching/pull/103) | Open |
+| [ACEsuit/mace](https://github.com/ACEsuit/mace) | [Convert atomic references before subtracting node energies](https://github.com/ACEsuit/mace/pull/1800) | Open |
+| [deepchem/deepchem](https://github.com/deepchem/deepchem) | [Correct sampled normalizing-flow log density](https://github.com/deepchem/deepchem/pull/5260) | Open |
+| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Prevent double-precision underflow in findEmpties for deep empty regions (#8108)](https://github.com/plotly/plotly.js/pull/8162) | Open |
+| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Prevent internal _template leak into layout rangeslider opp-axis (#6310)](https://github.com/plotly/plotly.js/pull/8161) | Open |
+| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Fix tick prefixes and suffixes with explicit tick values](https://github.com/plotly/plotly.js/pull/8160) | Open |
+| [pytorch/rl](https://github.com/pytorch/rl) | [[LLM] Detach clipped importance ratio in CISPOLoss to preserve policy gradients](https://github.com/pytorch/rl/pull/4665) | Open |
 | [cornellius-gp/gpytorch](https://github.com/cornellius-gp/gpytorch) | [Compute full predictive covariance in CIQ variational strategy when diag is False](https://github.com/cornellius-gp/gpytorch/pull/2838) | Open |
 | [Lightning-AI/litgpt](https://github.com/Lightning-AI/litgpt) | [Return point-mass probabilities for greedy speculative decoding](https://github.com/Lightning-AI/litgpt/pull/2386) | Open |
 | [ACEsuit/mace](https://github.com/ACEsuit/mace) | [Include pair repulsion in PolarMACE energy, forces and stress](https://github.com/ACEsuit/mace/pull/1799) | Open |
@@ -30,9 +44,6 @@ Small, reproducible fixes to the scientific tools I depend on: scientific plotti
 | [deepchem/deepchem](https://github.com/deepchem/deepchem) | [Fix learned hidden-state recurrence in DMPNN encoder](https://github.com/deepchem/deepchem/pull/5258) | Open |
 | [CederGroupHub/chgnet](https://github.com/CederGroupHub/chgnet) | [Preserve best-validation model weights during later training](https://github.com/CederGroupHub/chgnet/pull/256) | Open |
 | [CederGroupHub/chgnet](https://github.com/CederGroupHub/chgnet) | [Fix empty missing-label losses and valid-energy MAE weighting](https://github.com/CederGroupHub/chgnet/pull/255) | Open |
-| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Prevent double-precision underflow in findEmpties for deep empty regions (#8108)](https://github.com/plotly/plotly.js/pull/8162) | Open |
-| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Prevent internal _template leak into layout rangeslider opp-axis (#6310)](https://github.com/plotly/plotly.js/pull/8161) | Open |
-| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Fix tick prefixes and suffixes with explicit tick values](https://github.com/plotly/plotly.js/pull/8160) | Open |
 <!--CONTRIBUTIONS:END-->
 
 ## How I contribute
