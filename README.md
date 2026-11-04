@@ -17,7 +17,23 @@ Small, reproducible fixes to the scientific tools I depend on: scientific plotti
 <!--CONTRIBUTIONS:START-->
 | Project | Pull request | Status |
 | --- | --- | --- |
+| [orbital-materials/orb-models](https://github.com/orbital-materials/orb-models) | [Use positive cell volume for ZBL virial stress](https://github.com/orbital-materials/orb-models/pull/180) | Merged |
 | [rdkit/rdkit](https://github.com/rdkit/rdkit) | [Fix H-bond acceptor definitions for N atoms in BaseFeatures.fdef (#9770)](https://github.com/rdkit/rdkit/pull/9783) | Merged |
+| [Z2PackDev/TBmodels](https://github.com/Z2PackDev/TBmodels) | [Tolerate determinant roundoff for unimodular unit cells](https://github.com/Z2PackDev/TBmodels/pull/245) | Open |
+| [Z2PackDev/TBmodels](https://github.com/Z2PackDev/TBmodels) | [Use dimension-aware default origins for model transformations](https://github.com/Z2PackDev/TBmodels/pull/244) | Open |
+| [iqm-finland/KQCircuits](https://github.com/iqm-finland/KQCircuits) | [Avoid backtracking polygons for angled internal ports](https://github.com/iqm-finland/KQCircuits/pull/151) | Open |
+| [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Fix per-token flow velocity sign and update video pipeline callers](https://github.com/huggingface/diffusers/pull/15177) | Open |
+| [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Correct the transmon Josephson-to-charging energy ratio](https://github.com/sqdlab/SQDMetal/pull/94) | Open |
+| [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Preserve optimizer solutions and report the original constraint cost](https://github.com/sqdlab/SQDMetal/pull/93) | Open |
+| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [Include Wang NAC derivatives in the dynamical-matrix Hessian](https://github.com/phonopy/phonopy/pull/1080) | Open |
+| [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Return physical values from lumped LC resonators](https://github.com/sqdlab/SQDMetal/pull/92) | Open |
+| [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Fix metre suffix conversion in length values](https://github.com/sqdlab/SQDMetal/pull/91) | Open |
+| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [Fix switching group velocities from finite differences to analytical derivatives](https://github.com/phonopy/phonopy/pull/1079) | Open |
+| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [Fix atom-projected moment normalization for frequency windows](https://github.com/phonopy/phonopy/pull/1078) | Open |
+| [lucidrains/titans-pytorch](https://github.com/lucidrains/titans-pytorch) | [Preserve neural-memory retrieval across partial chunk continuations](https://github.com/lucidrains/titans-pytorch/pull/68) | Open |
+| [atong01/conditional-flow-matching](https://github.com/atong01/conditional-flow-matching) | [Preserve tensor gradients when sampling OT trajectories](https://github.com/atong01/conditional-flow-matching/pull/187) | Open |
+| [lucidrains/titans-pytorch](https://github.com/lucidrains/titans-pytorch) | [Preserve storage masks across cached neural-memory chunks](https://github.com/lucidrains/titans-pytorch/pull/67) | Open |
+| [rdkit/rdkit](https://github.com/rdkit/rdkit) | [Fix overly broad donor SMARTS in the pharmacophore tutorial](https://github.com/rdkit/rdkit/pull/9792) | Open |
 | [GFNOrg/torchgfn](https://github.com/GFNOrg/torchgfn) | [Fix backward probabilities and gradients for resumed trajectories](https://github.com/GFNOrg/torchgfn/pull/535) | Open |
 | [facebookresearch/fairchem](https://github.com/facebookresearch/fairchem) | [Preserve autograd graphs for UMA Hessian inference and training](https://github.com/facebookresearch/fairchem/pull/2272) | Open |
 | [lucidrains/x-transformers](https://github.com/lucidrains/x-transformers) | [Preserve global positions across cached recurrent transformer steps](https://github.com/lucidrains/x-transformers/pull/410) | Open |
@@ -38,7 +54,6 @@ Small, reproducible fixes to the scientific tools I depend on: scientific plotti
 | [ACEsuit/mace](https://github.com/ACEsuit/mace) | [Include pair repulsion in PolarMACE energy, forces and stress](https://github.com/ACEsuit/mace/pull/1799) | Open |
 | [MDIL-SNU/SevenNet](https://github.com/MDIL-SNU/SevenNet) | [Preserve learned predictions in single-modality conversion](https://github.com/MDIL-SNU/SevenNet/pull/335) | Open |
 | [torchmd/torchmd-net](https://github.com/torchmd/torchmd-net) | [Fix TensorNet2 repulsion scaling during denormalization](https://github.com/torchmd/torchmd-net/pull/396) | Open |
-| [orbital-materials/orb-models](https://github.com/orbital-materials/orb-models) | [Use positive cell volume for ZBL virial stress](https://github.com/orbital-materials/orb-models/pull/180) | Open |
 | [ACEsuit/mace](https://github.com/ACEsuit/mace) | [Fix learned-interaction omission in EnergyDipolesMACE node energies](https://github.com/ACEsuit/mace/pull/1798) | Open |
 | [meta-pytorch/botorch](https://github.com/meta-pytorch/botorch) | [Correct marginal densities and entropy constant in batch MC JES](https://github.com/meta-pytorch/botorch/pull/3543) | Open |
 | [deepchem/deepchem](https://github.com/deepchem/deepchem) | [Fix learned hidden-state recurrence in DMPNN encoder](https://github.com/deepchem/deepchem/pull/5258) | Open |
