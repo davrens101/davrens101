@@ -17,25 +17,45 @@ Small, reproducible fixes to the scientific tools I depend on: scientific plotti
 <!--CONTRIBUTIONS:START-->
 | Project | Pull request | Status |
 | --- | --- | --- |
+| [lucidrains/titans-pytorch](https://github.com/lucidrains/titans-pytorch) | [Preserve neural-memory retrieval across partial chunk continuations](https://github.com/lucidrains/titans-pytorch/pull/68) | Merged |
+| [lucidrains/titans-pytorch](https://github.com/lucidrains/titans-pytorch) | [Preserve storage masks across cached neural-memory chunks](https://github.com/lucidrains/titans-pytorch/pull/67) | Merged |
 | [orbital-materials/orb-models](https://github.com/orbital-materials/orb-models) | [Use positive cell volume for ZBL virial stress](https://github.com/orbital-materials/orb-models/pull/180) | Merged |
-| [rdkit/rdkit](https://github.com/rdkit/rdkit) | [Fix H-bond acceptor definitions for N atoms in BaseFeatures.fdef (#9770)](https://github.com/rdkit/rdkit/pull/9783) | Merged |
+| [huggingface/lerobot](https://github.com/huggingface/lerobot) | [Do not re-zero the OpenArm leader on connect](https://github.com/huggingface/lerobot/pull/5260) | Open |
+| [huggingface/lerobot](https://github.com/huggingface/lerobot) | [Restore cfg.pretrained_path when make_policy fails](https://github.com/huggingface/lerobot/pull/5259) | Open |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | [[Fix] modelslim: don't mutate the caller's quantization config](https://github.com/sgl-project/sglang/pull/48643) | Open |
+| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | [hash_args: ignore dict insertion order in cache keys](https://github.com/EleutherAI/lm-evaluation-harness/pull/4536) | Open |
+| [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Keep DreamLite's GQA-aware attention processor when attention slicing is disabled](https://github.com/huggingface/diffusers/pull/15191) | Open |
+| [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Fix is_causal being ignored by the FLEX attention backend](https://github.com/huggingface/diffusers/pull/15188) | Open |
+| [meta-pytorch/torchtune](https://github.com/meta-pytorch/torchtune) | [fix(checkpointing): DistributedCheckpointer accepts model_type](https://github.com/meta-pytorch/torchtune/pull/3012) | Open |
+| [Lightning-AI/litgpt](https://github.com/Lightning-AI/litgpt) | [fix(get_lr): avoid division by zero when warmup_iters >= max_iters](https://github.com/Lightning-AI/litgpt/pull/2391) | Open |
 | [Z2PackDev/TBmodels](https://github.com/Z2PackDev/TBmodels) | [Tolerate determinant roundoff for unimodular unit cells](https://github.com/Z2PackDev/TBmodels/pull/245) | Open |
 | [Z2PackDev/TBmodels](https://github.com/Z2PackDev/TBmodels) | [Use dimension-aware default origins for model transformations](https://github.com/Z2PackDev/TBmodels/pull/244) | Open |
+| [GFNOrg/torchgfn](https://github.com/GFNOrg/torchgfn) | [Fix geometric SubTB normalization at unit discount](https://github.com/GFNOrg/torchgfn/pull/536) | Open |
+| [lucidrains/x-transformers](https://github.com/lucidrains/x-transformers) | [Keep prefix masks and contrastive caches aligned with cropped context](https://github.com/lucidrains/x-transformers/pull/413) | Open |
+| [lucidrains/titans-pytorch](https://github.com/lucidrains/titans-pytorch) | [Fix NaN memory updates when clipping fully masked chunks](https://github.com/lucidrains/titans-pytorch/pull/69) | Open |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [[Bugfix][Tokenizer] Scope DeepSeek V4.1 to_json fallback except to Exception](https://github.com/vllm-project/vllm/pull/65861) | Open |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | [[Fix] srt: remove unreachable return in Vertex AI endpoint](https://github.com/sgl-project/sglang/pull/48595) | Open |
+| [meta-pytorch/torchtune](https://github.com/meta-pytorch/torchtune) | [Fix NaN gradients for masked reverse-KL vocabulary entries](https://github.com/meta-pytorch/torchtune/pull/3011) | Open |
+| [rtqichen/torchdiffeq](https://github.com/rtqichen/torchdiffeq) | [Propagate adjoints through constant vector-field intervals](https://github.com/rtqichen/torchdiffeq/pull/299) | Open |
+| [lucidrains/vector-quantize-pytorch](https://github.com/lucidrains/vector-quantize-pytorch) | [Project decoded VQ codes along the feature axis for channel-first layouts](https://github.com/lucidrains/vector-quantize-pytorch/pull/278) | Open |
+| [patrick-kidger/torchcde](https://github.com/patrick-kidger/torchcde) | [Support time-only rectilinear controls without overlapping writes](https://github.com/patrick-kidger/torchcde/pull/61) | Open |
 | [iqm-finland/KQCircuits](https://github.com/iqm-finland/KQCircuits) | [Avoid backtracking polygons for angled internal ports](https://github.com/iqm-finland/KQCircuits/pull/151) | Open |
+| [rdkit/rdkit](https://github.com/rdkit/rdkit) | [Fix overly broad donor SMARTS in the pharmacophore tutorial](https://github.com/rdkit/rdkit/pull/9792) | Open |
 | [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Fix per-token flow velocity sign and update video pipeline callers](https://github.com/huggingface/diffusers/pull/15177) | Open |
+| [facebookresearch/fairchem](https://github.com/facebookresearch/fairchem) | [Preserve autograd graphs for UMA Hessian inference and training](https://github.com/facebookresearch/fairchem/pull/2272) | Open |
+| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [Include Wang NAC derivatives in the dynamical-matrix Hessian](https://github.com/phonopy/phonopy/pull/1080) | Open |
+| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [Fix sub-Kelvin Bose populations in thermal displacements](https://github.com/phonopy/phonopy/pull/1081) | Open |
+| [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Return port linewidths in Hz and support single-port eigenmodes](https://github.com/sqdlab/SQDMetal/pull/97) | Open |
+| [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Handle array inputs and optional values in capacitance analysis](https://github.com/sqdlab/SQDMetal/pull/96) | Open |
+| [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Preserve mode identities and full-model Lamb shifts in EPR reports](https://github.com/sqdlab/SQDMetal/pull/95) | Open |
 | [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Correct the transmon Josephson-to-charging energy ratio](https://github.com/sqdlab/SQDMetal/pull/94) | Open |
 | [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Preserve optimizer solutions and report the original constraint cost](https://github.com/sqdlab/SQDMetal/pull/93) | Open |
-| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [Include Wang NAC derivatives in the dynamical-matrix Hessian](https://github.com/phonopy/phonopy/pull/1080) | Open |
 | [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Return physical values from lumped LC resonators](https://github.com/sqdlab/SQDMetal/pull/92) | Open |
 | [sqdlab/SQDMetal](https://github.com/sqdlab/SQDMetal) | [Fix metre suffix conversion in length values](https://github.com/sqdlab/SQDMetal/pull/91) | Open |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [Fix switching group velocities from finite differences to analytical derivatives](https://github.com/phonopy/phonopy/pull/1079) | Open |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [Fix atom-projected moment normalization for frequency windows](https://github.com/phonopy/phonopy/pull/1078) | Open |
-| [lucidrains/titans-pytorch](https://github.com/lucidrains/titans-pytorch) | [Preserve neural-memory retrieval across partial chunk continuations](https://github.com/lucidrains/titans-pytorch/pull/68) | Open |
 | [atong01/conditional-flow-matching](https://github.com/atong01/conditional-flow-matching) | [Preserve tensor gradients when sampling OT trajectories](https://github.com/atong01/conditional-flow-matching/pull/187) | Open |
-| [lucidrains/titans-pytorch](https://github.com/lucidrains/titans-pytorch) | [Preserve storage masks across cached neural-memory chunks](https://github.com/lucidrains/titans-pytorch/pull/67) | Open |
-| [rdkit/rdkit](https://github.com/rdkit/rdkit) | [Fix overly broad donor SMARTS in the pharmacophore tutorial](https://github.com/rdkit/rdkit/pull/9792) | Open |
 | [GFNOrg/torchgfn](https://github.com/GFNOrg/torchgfn) | [Fix backward probabilities and gradients for resumed trajectories](https://github.com/GFNOrg/torchgfn/pull/535) | Open |
-| [facebookresearch/fairchem](https://github.com/facebookresearch/fairchem) | [Preserve autograd graphs for UMA Hessian inference and training](https://github.com/facebookresearch/fairchem/pull/2272) | Open |
 | [lucidrains/x-transformers](https://github.com/lucidrains/x-transformers) | [Preserve global positions across cached recurrent transformer steps](https://github.com/lucidrains/x-transformers/pull/410) | Open |
 | [lucidrains/x-transformers](https://github.com/lucidrains/x-transformers) | [Preserve optional MLA cache components in generation and beam search](https://github.com/lucidrains/x-transformers/pull/408) | Open |
 | [torchmd/torchmd-net](https://github.com/torchmd/torchmd-net) | [Make Coulomb energies independent of coordinate units](https://github.com/torchmd/torchmd-net/pull/399) | Open |
@@ -45,20 +65,6 @@ Small, reproducible fixes to the scientific tools I depend on: scientific plotti
 | [facebookresearch/flow_matching](https://github.com/facebookresearch/flow_matching) | [Fix singular discrete-flow start with exact entrance law](https://github.com/facebookresearch/flow_matching/pull/103) | Open |
 | [ACEsuit/mace](https://github.com/ACEsuit/mace) | [Convert atomic references before subtracting node energies](https://github.com/ACEsuit/mace/pull/1800) | Open |
 | [deepchem/deepchem](https://github.com/deepchem/deepchem) | [Correct sampled normalizing-flow log density](https://github.com/deepchem/deepchem/pull/5260) | Open |
-| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Prevent double-precision underflow in findEmpties for deep empty regions (#8108)](https://github.com/plotly/plotly.js/pull/8162) | Open |
-| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Prevent internal _template leak into layout rangeslider opp-axis (#6310)](https://github.com/plotly/plotly.js/pull/8161) | Open |
-| [plotly/plotly.js](https://github.com/plotly/plotly.js) | [Fix tick prefixes and suffixes with explicit tick values](https://github.com/plotly/plotly.js/pull/8160) | Open |
-| [pytorch/rl](https://github.com/pytorch/rl) | [[LLM] Detach clipped importance ratio in CISPOLoss to preserve policy gradients](https://github.com/pytorch/rl/pull/4665) | Open |
-| [cornellius-gp/gpytorch](https://github.com/cornellius-gp/gpytorch) | [Compute full predictive covariance in CIQ variational strategy when diag is False](https://github.com/cornellius-gp/gpytorch/pull/2838) | Open |
-| [Lightning-AI/litgpt](https://github.com/Lightning-AI/litgpt) | [Return point-mass probabilities for greedy speculative decoding](https://github.com/Lightning-AI/litgpt/pull/2386) | Open |
-| [ACEsuit/mace](https://github.com/ACEsuit/mace) | [Include pair repulsion in PolarMACE energy, forces and stress](https://github.com/ACEsuit/mace/pull/1799) | Open |
-| [MDIL-SNU/SevenNet](https://github.com/MDIL-SNU/SevenNet) | [Preserve learned predictions in single-modality conversion](https://github.com/MDIL-SNU/SevenNet/pull/335) | Open |
-| [torchmd/torchmd-net](https://github.com/torchmd/torchmd-net) | [Fix TensorNet2 repulsion scaling during denormalization](https://github.com/torchmd/torchmd-net/pull/396) | Open |
-| [ACEsuit/mace](https://github.com/ACEsuit/mace) | [Fix learned-interaction omission in EnergyDipolesMACE node energies](https://github.com/ACEsuit/mace/pull/1798) | Open |
-| [meta-pytorch/botorch](https://github.com/meta-pytorch/botorch) | [Correct marginal densities and entropy constant in batch MC JES](https://github.com/meta-pytorch/botorch/pull/3543) | Open |
-| [deepchem/deepchem](https://github.com/deepchem/deepchem) | [Fix learned hidden-state recurrence in DMPNN encoder](https://github.com/deepchem/deepchem/pull/5258) | Open |
-| [CederGroupHub/chgnet](https://github.com/CederGroupHub/chgnet) | [Preserve best-validation model weights during later training](https://github.com/CederGroupHub/chgnet/pull/256) | Open |
-| [CederGroupHub/chgnet](https://github.com/CederGroupHub/chgnet) | [Fix empty missing-label losses and valid-energy MAE weighting](https://github.com/CederGroupHub/chgnet/pull/255) | Open |
 <!--CONTRIBUTIONS:END-->
 
 ## How I contribute
