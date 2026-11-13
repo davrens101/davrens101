@@ -1,4 +1,4 @@
-// Refreshes statuses for the hand-picked PRs in selected-contributions.json.
+// Maintains the hand-picked PR showcase in selected-contributions.json.
 // Edit that list to change the showcase; recent activity never adds rows.
 // Usage: node scripts/update-contributions.mjs [--dry]
 import { readFileSync, writeFileSync } from "node:fs";
@@ -25,16 +25,16 @@ const rows = (await Promise.all(selected.map(async ({ repo, number, summary }) =
     pr.base.repo.owner.login.toLowerCase() === USER.toLowerCase() ||
     pr.base.repo.full_name.toLowerCase() !== repo.toLowerCase()
   ) throw new Error(`Selected PR must be authored by ${USER} on a public upstream repository: ${repo}#${number}`);
-  return { pr, repo, summary, status: pr.merged_at ? "Merged" : "Open" };
+  return { pr, repo, summary };
 }))).filter(({ pr }) => !pr.draft && (pr.merged_at || pr.state === "open"));
 
 const esc = (s) => s.replace(/\|/g, "\\|").replace(/\r?\n/g, " ");
 
 const table = rows.length
   ? [
-      "| Project | Pull request | Status |",
-      "| --- | --- | --- |",
-      ...rows.map((r) => `| [${r.repo}](https://github.com/${r.repo}) | [${esc(r.summary)}](${r.pr.html_url}) | ${r.status} |`),
+      "| Project | Pull request |",
+      "| --- | --- |",
+      ...rows.map((r) => `| [${r.repo}](https://github.com/${r.repo}) | [${esc(r.summary)}](${r.pr.html_url}) |`),
     ].join("\n")
   : EMPTY;
 

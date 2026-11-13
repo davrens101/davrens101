@@ -28,5 +28,25 @@
     "repo": "dmlc/xgboost",
     "number": 12831,
     "summary": "Reset early-stopping state between training runs when a callback is reused"
+  },
+  {
+    "repo": "pytorch/rl",
+    "number": 4665,
+    "summary": "Restore CISPO policy gradients for clipped tokens to match the learning objective"
+  },
+  {
+    "repo": "pytorch/vision",
+    "number": 9749,
+    "summary": "Make right-angle tensor rotations exact and fix expanded image dimensions"
+  },
+  {
+    "repo": "openai/whisper",
+    "number": 2903,
+    "summary": "Accept NumPy scalar temperatures without crashing speech transcription"
+  },
+  {
+    "repo": "Comfy-Org/ComfyUI",
+    "number": 17665,
+    "summary": "Prevent NaN noise schedules in single-step KL-optimal sampling"
   }
 ]

@@ -15,17 +15,21 @@ I'm a generalist drawn to problems at the intersection of machine learning, scie
 
 ## Selected pull requests
 
-Selected correctness and reliability work in widely used AI/ML projects. Statuses refresh daily; **Open** means the change has not yet been merged.
+Selected correctness and reliability work across AI/ML, generative media, and scientific computing.
 
 <!--CONTRIBUTIONS:START-->
-| Project | Pull request | Status |
-| --- | --- | --- |
-| [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Align per-token flow-matching velocity conventions across schedulers and video pipelines](https://github.com/huggingface/diffusers/pull/15177) | Open |
-| [sgl-project/sglang](https://github.com/sgl-project/sglang) | [Correct streaming of multiple DeepSeek V3.1 tool calls](https://github.com/sgl-project/sglang/pull/49107) | Open |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [Preserve response text preceding reasoning blocks instead of silently dropping it](https://github.com/vllm-project/vllm/pull/66333) | Open |
-| [pyg-team/pytorch_geometric](https://github.com/pyg-team/pytorch_geometric) | [Prevent undirected negative sampling from returning edges already present in the graph](https://github.com/pyg-team/pytorch_geometric/pull/10886) | Open |
-| [huggingface/lerobot](https://github.com/huggingface/lerobot) | [Prevent FP16 normalization NaNs caused by epsilon underflow on constant coordinates](https://github.com/huggingface/lerobot/pull/5273) | Open |
-| [dmlc/xgboost](https://github.com/dmlc/xgboost) | [Reset early-stopping state between training runs when a callback is reused](https://github.com/dmlc/xgboost/pull/12831) | Open |
+| Project | Pull request |
+| --- | --- |
+| [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Align per-token flow-matching velocity conventions across schedulers and video pipelines](https://github.com/huggingface/diffusers/pull/15177) |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | [Correct streaming of multiple DeepSeek V3.1 tool calls](https://github.com/sgl-project/sglang/pull/49107) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [Preserve response text preceding reasoning blocks instead of silently dropping it](https://github.com/vllm-project/vllm/pull/66333) |
+| [pyg-team/pytorch_geometric](https://github.com/pyg-team/pytorch_geometric) | [Prevent undirected negative sampling from returning edges already present in the graph](https://github.com/pyg-team/pytorch_geometric/pull/10886) |
+| [huggingface/lerobot](https://github.com/huggingface/lerobot) | [Prevent FP16 normalization NaNs caused by epsilon underflow on constant coordinates](https://github.com/huggingface/lerobot/pull/5273) |
+| [dmlc/xgboost](https://github.com/dmlc/xgboost) | [Reset early-stopping state between training runs when a callback is reused](https://github.com/dmlc/xgboost/pull/12831) |
+| [pytorch/rl](https://github.com/pytorch/rl) | [Restore CISPO policy gradients for clipped tokens to match the learning objective](https://github.com/pytorch/rl/pull/4665) |
+| [pytorch/vision](https://github.com/pytorch/vision) | [Make right-angle tensor rotations exact and fix expanded image dimensions](https://github.com/pytorch/vision/pull/9749) |
+| [openai/whisper](https://github.com/openai/whisper) | [Accept NumPy scalar temperatures without crashing speech transcription](https://github.com/openai/whisper/pull/2903) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | [Prevent NaN noise schedules in single-step KL-optimal sampling](https://github.com/Comfy-Org/ComfyUI/pull/17665) |
 <!--CONTRIBUTIONS:END-->
 
 ## How I contribute
