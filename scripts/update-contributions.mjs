@@ -1,36 +1,40 @@
-// Regenerates the contributions table in README.md from public PRs authored by
-// the profile owner on repositories they do not own. Usage: node scripts/update-contributions.mjs [--dry]
+// Refreshes statuses for the hand-picked PRs in selected-contributions.json.
+// Edit that list to change the showcase; recent activity never adds rows.
+// Usage: node scripts/update-contributions.mjs [--dry]
 import { readFileSync, writeFileSync } from "node:fs";
 
 const USER = process.env.GITHUB_REPOSITORY_OWNER || "davrens101";
 const TOKEN = process.env.GITHUB_TOKEN;
 const START = "<!--CONTRIBUTIONS:START-->";
 const END = "<!--CONTRIBUTIONS:END-->";
-const EMPTY = "_Pull requests will appear here automatically._";
+const EMPTY = "_No selected pull requests are currently open or merged._";
 const README = new URL("../README.md", import.meta.url);
+const selected = JSON.parse(readFileSync(new URL("./selected-contributions.json", import.meta.url), "utf8"));
 const dry = process.argv.includes("--dry");
 
 const headers = { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
 if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
 
-const q = encodeURIComponent(`is:pr is:public author:${USER} -user:${USER}`);
-const res = await fetch(`https://api.github.com/search/issues?q=${q}&sort=updated&order=desc&per_page=50`, { headers });
-if (!res.ok) throw new Error(`GitHub search failed: ${res.status} ${await res.text()}`);
-const { items } = await res.json();
+const rows = (await Promise.all(selected.map(async ({ repo, number, summary }) => {
+  const res = await fetch(`https://api.github.com/repos/${repo}/pulls/${number}`, { headers });
+  if (!res.ok) throw new Error(`GitHub PR lookup failed for ${repo}#${number}: ${res.status} ${await res.text()}`);
+  const pr = await res.json();
+  if (
+    pr.user.login.toLowerCase() !== USER.toLowerCase() ||
+    pr.base.repo.private ||
+    pr.base.repo.owner.login.toLowerCase() === USER.toLowerCase() ||
+    pr.base.repo.full_name.toLowerCase() !== repo.toLowerCase()
+  ) throw new Error(`Selected PR must be authored by ${USER} on a public upstream repository: ${repo}#${number}`);
+  return { pr, repo, summary, status: pr.merged_at ? "Merged" : "Open" };
+}))).filter(({ pr }) => !pr.draft && (pr.merged_at || pr.state === "open"));
 
-const status = (pr) => (pr.pull_request?.merged_at ? "Merged" : pr.state === "open" ? (pr.draft ? "Draft" : "Open") : "Closed");
-const rank = { Merged: 0, Open: 1, Draft: 2, Closed: 3 };
 const esc = (s) => s.replace(/\|/g, "\\|").replace(/\r?\n/g, " ");
-const rows = items
-  .map((pr) => ({ pr, status: status(pr), repo: pr.repository_url.replace("https://api.github.com/repos/", "") }))
-  .filter((r) => r.status !== "Closed")
-  .sort((a, b) => rank[a.status] - rank[b.status] || b.pr.updated_at.localeCompare(a.pr.updated_at));
 
 const table = rows.length
   ? [
       "| Project | Pull request | Status |",
       "| --- | --- | --- |",
-      ...rows.map((r) => `| [${r.repo}](https://github.com/${r.repo}) | [${esc(r.pr.title)}](${r.pr.html_url}) | ${r.status} |`),
+      ...rows.map((r) => `| [${r.repo}](https://github.com/${r.repo}) | [${esc(r.summary)}](${r.pr.html_url}) | ${r.status} |`),
     ].join("\n")
   : EMPTY;
 

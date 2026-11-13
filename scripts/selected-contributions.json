@@ -1,0 +1,32 @@
+[
+  {
+    "repo": "huggingface/diffusers",
+    "number": 15177,
+    "summary": "Align per-token flow-matching velocity conventions across schedulers and video pipelines"
+  },
+  {
+    "repo": "sgl-project/sglang",
+    "number": 49107,
+    "summary": "Correct streaming of multiple DeepSeek V3.1 tool calls"
+  },
+  {
+    "repo": "vllm-project/vllm",
+    "number": 66333,
+    "summary": "Preserve response text preceding reasoning blocks instead of silently dropping it"
+  },
+  {
+    "repo": "pyg-team/pytorch_geometric",
+    "number": 10886,
+    "summary": "Prevent undirected negative sampling from returning edges already present in the graph"
+  },
+  {
+    "repo": "huggingface/lerobot",
+    "number": 5273,
+    "summary": "Prevent FP16 normalization NaNs caused by epsilon underflow on constant coordinates"
+  },
+  {
+    "repo": "dmlc/xgboost",
+    "number": 12831,
+    "summary": "Reset early-stopping state between training runs when a callback is reused"
+  }
+]
