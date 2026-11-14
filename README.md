@@ -20,7 +20,6 @@ Selected correctness and reliability work across AI/ML, generative media, and sc
 <!--CONTRIBUTIONS:START-->
 | Project | Pull request |
 | --- | --- |
-| [huggingface/diffusers](https://github.com/huggingface/diffusers) | [Align per-token flow-matching velocity conventions across schedulers and video pipelines](https://github.com/huggingface/diffusers/pull/15177) |
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | [Correct streaming of multiple DeepSeek V3.1 tool calls](https://github.com/sgl-project/sglang/pull/49107) |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [Preserve response text preceding reasoning blocks instead of silently dropping it](https://github.com/vllm-project/vllm/pull/66333) |
 | [pyg-team/pytorch_geometric](https://github.com/pyg-team/pytorch_geometric) | [Prevent undirected negative sampling from returning edges already present in the graph](https://github.com/pyg-team/pytorch_geometric/pull/10886) |
