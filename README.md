@@ -46,28 +46,31 @@ At SuperMatics, I work on accelerating superconductor R&D with quantum-mechanica
 
 ## Selected pull requests
 
-Correctness and reliability work across **AI/ML, generative media, and scientific computing**.
+Merged contributions and open proposals across **AI/ML, generative media, and scientific computing**. Status is refreshed daily from GitHub; open does not imply accepted.
 
 <!--CONTRIBUTIONS:START-->
-| Project | Pull request |
-| --- | --- |
-| [**SGLang**](https://github.com/sgl-project/sglang)<br><sub>LLM serving</sub> | [Correct streaming of multiple DeepSeek V3.1 tool calls](https://github.com/sgl-project/sglang/pull/49107) |
-| [**vLLM**](https://github.com/vllm-project/vllm)<br><sub>LLM inference</sub> | [Preserve response text preceding reasoning blocks instead of silently dropping it](https://github.com/vllm-project/vllm/pull/66333) |
-| [**PyTorch Geometric**](https://github.com/pyg-team/pytorch_geometric)<br><sub>Graph learning</sub> | [Prevent undirected negative sampling from returning edges already present in the graph](https://github.com/pyg-team/pytorch_geometric/pull/10886) |
-| [**LeRobot**](https://github.com/huggingface/lerobot)<br><sub>Robot learning</sub> | [Prevent FP16 normalization NaNs caused by epsilon underflow on constant coordinates](https://github.com/huggingface/lerobot/pull/5273) |
-| [**XGBoost**](https://github.com/dmlc/xgboost)<br><sub>Machine learning</sub> | [Reset early-stopping state between training runs when a callback is reused](https://github.com/dmlc/xgboost/pull/12831) |
-| [**PyTorch · TorchRL**](https://github.com/pytorch/rl)<br><sub>Reinforcement learning</sub> | [Restore CISPO policy gradients for clipped tokens to match the learning objective](https://github.com/pytorch/rl/pull/4665) |
-| [**PyTorch · torchvision**](https://github.com/pytorch/vision)<br><sub>Computer vision</sub> | [Make right-angle tensor rotations exact and fix expanded image dimensions](https://github.com/pytorch/vision/pull/9749) |
-| [**OpenAI · Whisper**](https://github.com/openai/whisper)<br><sub>Speech recognition</sub> | [Accept NumPy scalar temperatures without crashing speech transcription](https://github.com/openai/whisper/pull/2903) |
-| [**ComfyUI**](https://github.com/Comfy-Org/ComfyUI)<br><sub>Generative media</sub> | [Prevent NaN noise schedules in single-step KL-optimal sampling](https://github.com/Comfy-Org/ComfyUI/pull/17665) |
+| Project | Pull request | Status |
+| --- | --- | --- |
+| [**Orb Models**](https://github.com/orbital-materials/orb-models)<br><sub>Physical systems</sub> | [Avoid NaN stress gradients for zero-volume molecular cells](https://github.com/orbital-materials/orb-models/pull/181) | **Merged** |
+| [**Vector Quantize PyTorch**](https://github.com/lucidrains/vector-quantize-pytorch)<br><sub>Machine learning</sub> | [Project decoded VQ codes along the feature axis for channel-first layouts](https://github.com/lucidrains/vector-quantize-pytorch/pull/278) | **Merged** |
+| [**Titans PyTorch**](https://github.com/lucidrains/titans-pytorch)<br><sub>Machine learning</sub> | [Preserve neural-memory retrieval across partial chunk continuations](https://github.com/lucidrains/titans-pytorch/pull/68) | **Merged** |
+| [**TorchGFN**](https://github.com/GFNOrg/torchgfn)<br><sub>Machine learning</sub> | [Fix backward probabilities and gradients for resumed trajectories](https://github.com/GFNOrg/torchgfn/pull/535) | **Merged** |
+| [**scikit-rf**](https://github.com/scikit-rf/scikit-rf)<br><sub>Scientific computing</sub> | [Respect scattering-wave definitions in physical two-port conversions](https://github.com/scikit-rf/scikit-rf/pull/1470) | **Merged** |
+| [**SGLang**](https://github.com/sgl-project/sglang)<br><sub>LLM serving</sub> | [Correct streaming of multiple DeepSeek V3.1 tool calls](https://github.com/sgl-project/sglang/pull/49107) | **Open** |
+| [**PyTorch Geometric**](https://github.com/pyg-team/pytorch_geometric)<br><sub>Graph learning</sub> | [Prevent undirected negative sampling from returning edges already present in the graph](https://github.com/pyg-team/pytorch_geometric/pull/10886) | **Open** |
+| [**XGBoost**](https://github.com/dmlc/xgboost)<br><sub>Machine learning</sub> | [Reset early-stopping state between training runs when a callback is reused](https://github.com/dmlc/xgboost/pull/12831) | **Open** |
+| [**PyTorch · TorchRL**](https://github.com/pytorch/rl)<br><sub>Reinforcement learning</sub> | [Restore CISPO policy gradients for clipped tokens to match the learning objective](https://github.com/pytorch/rl/pull/4665) | **Open** |
+| [**PyTorch · torchvision**](https://github.com/pytorch/vision)<br><sub>Computer vision</sub> | [Make right-angle tensor rotations exact and fix expanded image dimensions](https://github.com/pytorch/vision/pull/9749) | **Open** |
+| [**OpenAI · Whisper**](https://github.com/openai/whisper)<br><sub>Speech recognition</sub> | [Accept NumPy scalar temperatures without crashing speech transcription](https://github.com/openai/whisper/pull/2903) | **Open** |
+| [**ComfyUI**](https://github.com/Comfy-Org/ComfyUI)<br><sub>Generative media</sub> | [Prevent NaN noise schedules in single-step KL-optimal sampling](https://github.com/Comfy-Org/ComfyUI/pull/17665) | **Open** |
 <!--CONTRIBUTIONS:END-->
 
 <details>
 <summary><strong>How I contribute · engineering approach &amp; AI disclosure</strong></summary>
 
-1. Start from issues a maintainer has already accepted, and check nobody else is on them.
-2. Reproduce first. Add a test that fails without the fix, then make the smallest change that passes it.
-3. Show before and after evidence, run the project's own checks, and report honestly which ones fail and why.
-4. I use AI coding tools for research and drafting. I review every change myself and disclose AI assistance in each pull request, following each project's policy.
+1. Pick issues a maintainer has signaled are ready to accept, and check nobody else is on them.
+2. Reproduce first: add a test that fails without the fix, then make the smallest change that passes it.
+3. Show before-and-after evidence, run the project's own checks, and report honestly which ones fail and why.
+4. AI coding tools assist with research, implementation, tests, and drafting. AI assistance and verification limits are disclosed in individual pull requests; human review is not implied.
 
 </details>

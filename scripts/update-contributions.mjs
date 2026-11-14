@@ -32,9 +32,9 @@ const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, 
 
 const table = rows.length
   ? [
-      "| Project | Pull request |",
-      "| --- | --- |",
-      ...rows.map((r) => `| [**${esc(r.label)}**](https://github.com/${r.repo})<br><sub>${esc(r.area)}</sub> | [${esc(r.summary)}](${r.pr.html_url}) |`),
+      "| Project | Pull request | Status |",
+      "| --- | --- | --- |",
+      ...rows.map((r) => `| [**${esc(r.label)}**](https://github.com/${r.repo})<br><sub>${esc(r.area)}</sub> | [${esc(r.summary)}](${r.pr.html_url}) | ${r.pr.merged_at ? "**Merged**" : "**Open**"} |`),
     ].join("\n")
   : EMPTY;
 
